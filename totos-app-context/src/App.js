@@ -22,7 +22,8 @@ function App() {
     fecthTodos();
   };
 
-  // form integration
+  // form integration 
+  // https://app.umso.com/login
 
   const today = new Date();
   const strToday =
@@ -58,13 +59,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Application</h1>
+      <h1>Application Context</h1>
       <hr />
+      <br/>
       <TodoForm
         handleFormSubmit={handleFormSubmit}
         handleInputChange={handleInputChange}
         formState={formState}
       ></TodoForm>
+      <br/>
       <hr />
       <TodoList todos={todos} deleteTodo={deleteTodo}></TodoList>
     </div>
